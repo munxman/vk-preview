@@ -1,9 +1,11 @@
 # Valvekliinik Static Site – Build Status
 
-**Phase:** 2A – Multilingual pages  
-**Status:** ✅ PHASE 1 COMPLETE ✅ PHASE 2A COMPLETE  
+**Phase:** 3 – Final gap pages + preview refresh  
+**Status:** ✅ PHASE 1 COMPLETE ✅ PHASE 2A COMPLETE ✅ PHASE 2B COMPLETE ✅ PHASE 3 COMPLETE  
 **Phase 1 build date:** 2026-08-26  
 **Phase 2A build date:** 2026-08-26  
+**Phase 2B build date:** 2026-08-26  
+**Phase 3 build date:** 2026-08-26  
 **Built by:** OpenClaw Claude Sonnet 4.6 (automated)
 
 ---
@@ -13,7 +15,10 @@
 ### Summary
 - **19 HTML pages** built in Phase 1 (draft mode, noindex, nofollow)
 - **13 additional multilingual pages** built in Phase 2A
-- **32 total HTML pages** (plus 12 artiklid built by parallel session = 44 total)
+- **39 additional pages** built in Phase 2B (35 blog articles + index + 3 utility)
+- **4 additional pages** built in Phase 3 (spirograafia, tagasiside, arve, liitu-uudiskirjaga)
+- **~75 total HTML pages** (core + services + multilingual + blog + utility + Phase 3)
+- **32 total HTML pages** (plus 12 artiklid built by parallel session = 44 total) — superseded by Phase 2B+3 totals above
 - **1 shared CSS file** (mobile-first, no JS frameworks)
 - **1 SVG logo** (downloaded from live site)
 - **robots.txt** (Disallow: / – draft mode)
@@ -251,3 +256,97 @@ vk-static/
     ├── protseduurid/index.html
     └── vaimne-tervis/index.html
 ```
+
+---
+
+## Phase 2B – Blog + Images + Utility Pages
+
+**Status:** ✅ PHASE 2B COMPLETE  
+**Build date:** 2026-08-26  
+**Built by:** Claude Sonnet 4.6 (Phase 2B subagent)
+
+### Summary
+
+- **35 blog articles** built as `artiklid/<slug>/index.html`
+- **1 blog index page** (artiklid/index.html)
+- **3 utility pages**: privaatsuspoliitika, arst-ilma-jarjekorrata, aitah
+- **9 images downloaded** into assets/img/
+- **Dr Ingmar Lindström photo** replaced emoji placeholder in arstid/index.html
+- **Article CSS styles** added to assets/style.css
+
+### Pages Built (Phase 2B)
+
+| Category | Count |
+|---|---|
+| Blog articles (kasulikku/ + viimased-uudised/) | 35 |
+| Blog index page | 1 |
+| Utility pages | 3 |
+| **Total new pages** | **39** |
+
+### Articles Directory Structure
+
+```
+artiklid/
+├── index.html                    ← Blog listing page
+├── pisikirurgia-valvekliinikus-dr-anastassia-schults/index.html
+├── d-vitamiin-millal-on-vereanaluus-vajalik/index.html
+├── korvad-lukus-suvel-kas-laheb-ise-ule-ja-millal-poorduda-arsti-poole/index.html
+├── kuumarabandus-ja-ulekuumenemine-kuidas-suvesoojust-ohutult-nautida-ning-riske-ennetada/index.html
+├── puugihammustus-mida-teha-ja-millal-poorduda-arsti-poole/index.html
+├── bppv/index.html
+├── korvapoletik/index.html
+├── gripi-haigusnahud-diagnoosimine-ja-ravi/index.html
+├── nutikael-kui-moodsa-inimese-kaelavalude-pohjustaja/index.html
+├── millal-voib-kasutada-sos-pille-ja-milliste-tagajargedega-tuleb-arvestada/index.html
+├── kuidas-hoiduda-puukidest-ja-mida-teha-kui-uhe-endale-ikkagi-hangid/index.html
+├── gunekoloog-ivi-saar-selgitab-mis-voib-tekitada-vererohket-menstruatsiooni/index.html
+├── vahene-fuusiline-liikumine-mojub-inimesele-saatuslikult/index.html
+├── kuidas-toimida-et-paike-meile-liiga-ei-teeks/index.html
+├── mahetoit-pole-tavatoidust-tervislikum/index.html
+├── sugelev-saasehammustus/index.html
+├── koharavimid-mojuvad-peamiselt-rahakotile-ja-peaksid-olema-keelatud-lastele/index.html
+├── psuhholoog-psuhhiaater-vastuvott/index.html
+├── sotsiaalne-arevus/index.html
+├── labipolemine/index.html
+├── kuseteedepoletik/index.html
+├── valvekliinik-kolib-ulemiste-tervisemajja/index.html
+├── tootervishoiuteenus-tooandjale/index.html
+├── sisehaiguste-arst-maria-pintsaar/index.html
+├── narkootilise-retsepti-uuendamine/index.html
+├── lastearsti-vastuvotud/index.html
+├── naomaskid-aitavad-immuunsusteemi-kaitsta/index.html
+├── perearstide-kumme-kasku-koroonaviiruse-kohta/index.html
+├── laste-nahaloobed-ning-ennetusmeetmed/index.html
+├── valvekliinik-uued-lahtiolekuajad/index.html
+├── juhiloa-tervisetoend-kiirelt-katte-tallinnas/index.html
+├── kas-korvavalu-viitab-keskkorvapoletikule/index.html
+├── ettevaatust-paike/index.html
+├── koolikiusamine/index.html
+└── laste-hingamisteede-poletike-ravis-ei-ole-antibiootikumid-alati-vajalikud/index.html
+```
+
+### Phase 2B Content Features
+
+- Full Schema.org BlogPosting JSON-LD on all articles
+- BreadcrumbList JSON-LD on all articles
+- noindex,nofollow (draft mode preserved)
+- Author attribution where known (Ingmar Lindström, Ivi Saar, Anneli Belkin, Kerttu Randmaa, etc.)
+- Medical disclaimer on appropriate articles
+- Source citations preserved (Cochrane, EFSA, Biophysical Journal, etc.)
+- Internal cross-links between related articles and services
+- OG/Twitter Card meta on all articles
+- Article canonical pointing to live site URLs
+
+### Phase 3 – ✅ COMPLETE (2026-08-26)
+
+### Pages Built
+- ✅ `teenus/spirograafia/index.html` – Full spirograafia service content + MedicalTest schema
+- ✅ `tagasiside/index.html` – Feedback page; form disabled, tel+mailto interim
+- ✅ `arve/index.html` – Invoice request page; form disabled, billing details shown
+- ✅ `liitu-uudiskirjaga/index.html` – Newsletter signup; form disabled, mailto interim
+
+### Owner Decisions Remaining After Phase 3
+- Form backend for tagasiside/ (Formspree / Netlify Forms / custom)
+- Form backend for arve/ (same options)
+- Newsletter provider for liitu-uudiskirjaga/ (Mailchimp / MailerLite / Klaviyo)
+- All documented in GAPS.md “Phase 3 – Form Backends” section

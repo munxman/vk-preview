@@ -126,6 +126,35 @@
 
 ---
 
+---
+
+## Phase 3 – Form Backends (Owner Decision Needed)
+
+**Added 2026-08-26 (Phase 3)**
+
+### tagasiside/ – Feedback Form
+- **Issue:** Live site uses dynamic Elementor feedback form. Static version shows tel+mailto interim contacts. Form is disabled with an HTML comment explaining what's needed.
+- **Decision needed:** Choose a form backend:
+  - Option A: Formspree (free tier, simple) → paste endpoint URL into HTML
+  - Option B: Netlify Forms (if hosted on Netlify)
+  - Option C: Custom PHP/backend endpoint
+- **Priority:** Medium (nice-to-have at launch; phone/email works as interim)
+
+### arve/ – Invoice Request Form
+- **Issue:** Live site uses dynamic Elementor invoice request form. Static version shows interim contact instructions with required fields listed. IBAN and billing details displayed for reference.
+- **Decision needed:** Same form backend options as tagasiside/ above
+- **Priority:** Medium (billing requests likely low volume; email works)
+
+### liitu-uudiskirjaga/ – Newsletter Signup
+- **Issue:** Live site uses dynamic newsletter signup (likely Mailchimp embed). Static version shows interim mailto + phone.
+- **Decision needed:** Choose newsletter provider:
+  - Option A: Mailchimp (existing account?) → paste embed code
+  - Option B: MailerLite (free up to 1000 subscribers)
+  - Option C: Klaviyo or other
+- **Priority:** Medium-Low (newsletter program not active yet per known context)
+
+---
+
 ## Statistics Not Verified / Potentially Problematic
 
 | Claim | Source | Status |
