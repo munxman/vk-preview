@@ -1,8 +1,2 @@
-# Valvekliinik Static Site – DRAFT MODE
-# DO NOT INDEX – site not yet approved for public release
-
 User-agent: *
 Disallow: /
-
-# Sitemap (inactive – draft mode):
-# Sitemap: https://valvekliinik.ee/sitemap.xml
